@@ -1,0 +1,167 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    height: 100vh;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.container {
+    background-color: rgb(132, 135, 169);
+    width: 510px;
+    padding: 5px 25px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 28px;
+    /*box-shadow: 20px 20px 20px grey;*/
+    box-shadow: 5px 5px 10px rgba(189, 185, 211, 0.5), -5px -5px 10px rgba(189, 185, 211, 0.5);
+}
+
+.container h1 {
+    font: bold;
+    color: aliceblue;
+    font-size: 33px;
+    font-weight: 700;
+    text-align: center;
+    user-select: none;
+    letter-spacing: 1px;
+}
+.input{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.input:first-child {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.inptsss {
+    display: flex;
+    gap: 10px;
+}
+
+.inptsss div {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 100%;
+}
+
+#small {
+    font-size: 13px;
+}
+
+#result,
+#inputValue {
+    height: 41px;
+    font-size: 20px;
+    border: 1px solid gray;
+    border-left: none;
+    border-right: none;
+    border-top: none;
+    outline: none;
+    padding: 0 10px;
+    font-weight: 600;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+/*The font-family property in CSS is used to define the font family or typeface for text within an element. The font family values are listed in order of preference. If the first font is not available, the browser will try the next font in the list and so on. If none of the specified fonts are available, the browser will use its default font.*/
+}
+#result:focus,
+#inputValue:focus {
+    height: 40px;
+    font-size: 25px;
+    border: 1px solid rgb(130, 130, 255);
+    border-left: none;
+    border-right: none;
+    border-top: none;
+    outline: none;
+    padding: 0 10px;
+}
+
+#btn {
+    height: 45px;
+    font-size: 20px;
+    font-weight: 600;
+    background-color: blue;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+#btn:active {
+    height: 45px;
+    font-size: 20px;
+    font-weight: 600;
+    background-color: rgb(108, 108, 255);
+    color: white;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.resultss {
+    display: flex;
+    flex-direction: column;
+    font: bold;
+    gap: 10px;
+    color: black;
+}
+
+#type1,
+#type2 {
+    height: 41px;
+    font-size: 20px;
+    border: 1px solid gray;
+    border-left: none;
+    border-right: none;
+    border-top: none;
+    outline: none;
+    padding: 0 10px;
+}
+#type1:focus,
+#type2:focus {
+    height: 41px;
+    font-size: 20px;
+    border: 1px solid rgb(130, 130, 255);
+    border-left: none;
+    border-right: none;
+    border-top: none;
+    outline: none;
+    padding: 0 10px;
+}
+
+label {
+    font-size: 20px;
+    font: bold;
+    color: rgb(18, 18, 38);
+}
+
+@media only screen and (max-width: 575px) {
+    .container {
+        transform: scale(0.95);
+    }
+}
+
+@media only screen and (max-width: 425px) {
+    .container {
+        transform: scale(0.9);
+    }
+}
+
+@media only screen and (max-width: 340px) {
+    .container {
+        transform: scale(0.8);
+    }
+}
